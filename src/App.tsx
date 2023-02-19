@@ -3,15 +3,14 @@ import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
-// import {UnControlledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
+
 
 function App(props: any) {
     console.log("App rendering")
     // @ts-ignore
     return (
         <div>
-            {/*<PageTitle title={"This is APP component"} />*/}
-            {/*<PageTitle title={"My friends"} />*/}
             {/*<Accordion titleValue={"Menu"} collapsed={true} />*/}
             {/*<Accordion titleValue={"Users"} collapsed={true} />*/}
             {/*<Rating value={0}/>*/}
@@ -20,22 +19,12 @@ function App(props: any) {
             {/*<Rating value={3}/>*/}
             {/*<Rating value={4}/>*/}
             {/*<Rating value={5}/>*/}
-            <OnOff />
-            {/*<OnOff on={false}/>*/}
-            {/*<UnControlledAccordion titleValue={"Menu"}/>*/}
+            {/*<OnOff />*/}
+            <UncontrolledAccordion titleValue={"Menu"}/>
+            <UncontrolledAccordion titleValue={"Users"}/>
         </div>
     );
 }
-
-type PageTitlePropsType = {
-    title: string
-}
-
-function PageTitle(props: PageTitlePropsType) {
-    console.log("PageTitle rendering")
-    return <h1>{props.title}</h1>
-}
-
 
 
 
