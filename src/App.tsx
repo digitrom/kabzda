@@ -11,7 +11,7 @@ function App(props: any) {
     console.log("App rendering")
     // @ts-ignore
     return (
-        <div>
+        <div className={"App"}>
             {/*<Accordion titleValue={"Menu"} collapsed={true} />*/}
             {/*<Accordion titleValue={"Users"} collapsed={true} />*/}
             {/*<Rating value={0}/>*/}
@@ -20,9 +20,11 @@ function App(props: any) {
             {/*<Rating value={3}/>*/}
             {/*<Rating value={4}/>*/}
             {/*<Rating value={5}/>*/}
-            {/*<OnOff />*/}
-            {/*<UncontrolledAccordion titleValue={"Menu"}/>*/}
-            {/*<UncontrolledAccordion titleValue={"Users"}/>*/}
+            <OnOff />
+            <OnOff />
+            <OnOff />
+            <UncontrolledAccordion titleValue={"Menu"}/>
+            <UncontrolledAccordion titleValue={"Users"}/>
             <UncontrolledRating />
         </div>
     );
