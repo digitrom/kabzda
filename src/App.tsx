@@ -4,6 +4,7 @@ import Accordion from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 
 
 function App(props: any) {
@@ -20,8 +21,9 @@ function App(props: any) {
             {/*<Rating value={4}/>*/}
             {/*<Rating value={5}/>*/}
             {/*<OnOff />*/}
-            <UncontrolledAccordion titleValue={"Menu"}/>
-            <UncontrolledAccordion titleValue={"Users"}/>
+            {/*<UncontrolledAccordion titleValue={"Menu"}/>*/}
+            {/*<UncontrolledAccordion titleValue={"Users"}/>*/}
+            <UncontrolledRating />
         </div>
     );
 }
