@@ -26,7 +26,7 @@ type UncontrolledAccordionTitlePropsType = {
 function UncontrolledAccordionTitle(props: UncontrolledAccordionTitlePropsType) {
     return (
         <div>
-            <h3>-- {props.title} --</h3><button onClick={props.titleHandler}>+</button>
+            <h3 onClick={props.titleHandler}>{props.title}</h3>
         </div>
     )
 }
